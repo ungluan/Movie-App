@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">MoviesApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="image_url">https://image.tmdb.org/t/p/original%s</string>
+    <string name="overview">OVERVIEW</string>
+    <string name="budget">BUDGET</string>
+    <string name="duration">DURATION</string>
+    <string name="release_date">RELEASE DATE</string>
+    <string name="genres">GENRES</string>
+    <string name="budget_value">%s$</string>
+    <string name="duration_value">%s min</string>
+    <string name="cast">CASTS</string>
+    <string name="login">Login</string>
+    <string name="tem_and_condition"><u>Term and condition</u></string>
+    <string name="please_agree"><u>Please agree to our </u></string>
+    <string name="on_boarding_header1"><font color='#FF6200EE'>Hello!</font><font color='#FF000000'> I\'ll help you to choose a movie!</font></string>
+    <string name="on_boarding_content1">Going to enjoy Movie Night? Don\'t know which movie will like your friends? ril solve this problem easily!</string>
+    <string name="on_boarding_header2"><font color='#FF6200EE'>Invite friends</font><font color='#FF000000'> for great Movie Night!</font></string>
+    <string name="on_boarding_content2">Only one tap to start! Cooperate with your friends, create personal Movie Night or accept your friends invitations!</string>
+    <string name="on_boarding_header3"><font color='#FF6200EE'>Choose genres </font><font color='#FF000000'>that you prefer the most!</font></string>
+    <string name="on_boarding_content3">Pick your favorite genres, and relevant movies will be included to the voting list.Tune your preferences in Profile.</string>
+    <string name="on_boarding_button_next">Next</string>
+    <string name="on_boarding_button_get_started">Get Started</string>
+    <string name="skip">SKIP</string>
+</resources>

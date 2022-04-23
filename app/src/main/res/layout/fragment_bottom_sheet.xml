@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="trailer"
+            type="com.example.moviesapp.network.model.Trailer" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".BottomSheetFragment">
+
+        <!--<com.google.android.youtube.player.YouTubePlayerView
+            android:id="@+id/youtube_video"
+            android:layout_width="match_parent"
+            android:layout_height="220dp" />-->
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtube_player_viewer"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            app:autoPlay="false" />
+
+    </FrameLayout>
+</layout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="cast"
+            type="com.example.moviesapp.network.model.Cast" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="72dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            app:imageUrl="@{@string/image_url(cast.profile_path)}"
+            app:riv_corner_radius="8dp" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@{cast.name}"
+            android:textAppearance="?attr/textAppearanceBody2" />
+
+    </LinearLayout>
+</layout>

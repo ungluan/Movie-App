@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="movie"
+            type="com.example.moviesapp.network.model.Movie" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/black"
+            app:cardCornerRadius="8dp"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/item_poster"
+                    android:layout_width="120dp"
+                    android:layout_height="180dp"
+                    app:riv_corner_radius="8dp"
+                    android:scaleType="centerCrop"
+                    app:imageUrl="@{@string/image_url(movie.poster_path)}" />
+
+                <TextView
+                    android:id="@+id/item_title"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:layout_height="32dp"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:gravity="center"
+                    android:text="@{movie.title}"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"/>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </RelativeLayout>
+</layout>

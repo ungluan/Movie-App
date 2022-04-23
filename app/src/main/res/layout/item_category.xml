@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="category"
+            type="com.example.moviesapp.network.model.Category" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".fragment.CategoriesFragment">
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:id="@+id/title_category"
+                android:layout_marginStart="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{category.genre.name}"
+                android:textAppearance="?attr/textAppearanceHeadline6" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                listData="@{category.movies}"
+                tools:listitem="@layout/item_movie"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
